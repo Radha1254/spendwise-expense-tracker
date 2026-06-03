@@ -1,0 +1,187 @@
+.summary-cards {
+  display: flex;
+  gap: 20px;
+  margin-bottom: 25px;
+}
+
+.card-title {
+  color: gray;
+  margin-bottom: 10px;
+}
+
+.amount-text {
+  font-size: 32px;
+  font-weight: bold;
+  color: #2563eb;
+}
+.ai-box {
+  background: linear-gradient(
+    135deg,
+    #2563eb,
+    #1d4ed8
+  );
+
+  color: white;
+  padding: 25px;
+  border-radius: 20px;
+  margin-bottom: 25px;
+}
+
+.ai-box h2 {
+  margin-bottom: 10px;
+}
+
+.ai-box p {
+  line-height: 1.6;
+}
+.charts-container {
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+}
+
+.chart-box {
+  background: white;
+  padding: 28px;
+  border-radius: 24px;
+  box-shadow: 0 8px 24px rgba(0,0,0,0.06);
+  transition: 0.3s ease;
+}
+
+.chart-box:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 12px 28px rgba(0,0,0,0.1);
+}
+
+.chart-title {
+  font-size: 22px;
+  font-weight: 600;
+  margin-bottom: 20px;
+  color: #111827;
+}
+.trend-card {
+  background: white;
+  padding: 25px;
+  border-radius: 20px;
+  margin-top: 25px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.08);
+}
+
+.trend-title {
+  font-size: 30px;
+  font-weight: 700;
+  margin-bottom: 20px;
+  color: #1F2937;
+}
+
+.trend-text {
+  font-size: 18px;
+  margin: 12px 0;
+  color: #374151;
+}
+
+.trend-positive {
+  color: #EF4444;
+  font-weight: 600;
+}
+
+.trend-negative {
+  color: #10B981;
+  font-weight: 600;
+}
+body.dark {
+  background-color: #0f172a;
+  color: #f9fafb;
+}
+
+/* Main content */
+body.dark .main-content {
+  background-color: #0f172a;
+}
+
+/* Cards */
+body.dark .card,
+body.dark .trend-card,
+body.dark .expense-card,
+body.dark .budget-card,
+body.dark .summary-card,
+body.dark .ai-box {
+  background: #1e293b !important;
+  color: white !important;
+}
+
+/* Inputs */
+body.dark input,
+body.dark select,
+body.dark textarea {
+  background: #374151;
+  color: white;
+  border: 1px solid #4b5563;
+}
+
+/* Placeholder text */
+body.dark input::placeholder,
+body.dark textarea::placeholder {
+  color: #d1d5db;
+}
+
+/* Text colors */
+body.dark h1,
+body.dark h2,
+body.dark h3,
+body.dark p,
+body.dark label,
+body.dark span {
+  color: #f3f4f6;
+}
+@media screen and (max-width: 768px) {
+
+  /* Page spacing */
+  .reports-container {
+    padding: 12px;
+  }
+
+  /* Title */
+  .reports-title {
+    font-size: 26px;
+    margin-bottom: 20px;
+  }
+
+  /* Summary cards */
+  .summary-cards {
+    flex-direction: column;
+    gap: 15px;
+  }
+
+  /* Cards */
+  .card,
+  .trend-card,
+  .ai-box {
+    padding: 18px;
+    border-radius: 16px;
+  }
+
+  /* Trend text */
+  .trend-title {
+    font-size: 20px;
+  }
+
+  .trend-text {
+    font-size: 14px;
+  }
+
+  /* AI box */
+  .ai-box h2 {
+    font-size: 20px;
+  }
+
+  .ai-box p {
+    font-size: 14px;
+  }
+
+  /* Chart container */
+  canvas {
+    max-width: 100% !important;
+    height: auto !important;
+  }
+}
